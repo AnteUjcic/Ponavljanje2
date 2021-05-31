@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace test3dponavljanje
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            string sMala, sVelika, sPrvaTri, sZadnjihPet, s8_11;
+            string unos = Console.ReadLine();
+
+            sMala = unos.ToLower();
+            sVelika = unos.ToUpper();
+            sPrvaTri = unos.Substring(0, 3);
+            sZadnjihPet = unos.Substring(5, 0);
+
+            s8_11 = unos.Substring(8,11);
+
+
+           Console.WriteLine ("U velika slova  " + sVelika);
+                 Console.WriteLine("U mala slova  " + sMala); 
+                 Console.WriteLine("Prva tri " + sPrvaTri); 
+                 Console.WriteLine("Zadnja 5" + sZadnjihPet); 
+                Console.WriteLine("8 do 11 " + s8_11); 
+
+
+		Console.ReadKey();
+
+        }
+    }
+}

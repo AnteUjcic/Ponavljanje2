@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace test3dponavljanje
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int vrijeme, minute, sekunde;
+            Console.WriteLine("upisite vrijeme u minutama: ");
+            vrijeme =Convert.ToInt32(Console.ReadLine());
+            minute = vrijeme / 60;
+            sekunde = vrijeme - minute * 60;
+
+            Console.WriteLine("minute "+minute+" "+"sekunde "+sekunde);
+		Console.ReadKey();
+        }
+    }
