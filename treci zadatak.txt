@@ -1,0 +1,31 @@
+using System;
+
+namespace drugi_zadatak
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int cet = 0, ses=0;
+            Console.WriteLine("Upisite broj:");
+            cet = Convert.ToInt32(Console.ReadLine());
+            if (cet%4==0 && cet%6!=0)
+            {
+                Console.WriteLine(" broj je djeljiv sa 4  ");
+            } if(cet % 6 == 0 && cet % 4 != 0)
+            {
+                Console.WriteLine(" broj je djeljiv sa 6  ");
+            }
+             if (cet % 4 == 0 && cet % 6 == 0)
+            {
+                Console.WriteLine(" broj je djeljiv sa 6 i 4  ");
+            }
+           if (cet % 4 != 0 && cet % 6 != 0)
+            {
+                Console.WriteLine(" broj nje djeljiv sa 6  i 4 ");
+            }
+
+            Console.ReadKey();
+        }
+    }
+}

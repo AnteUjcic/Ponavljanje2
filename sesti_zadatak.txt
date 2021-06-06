@@ -1,0 +1,58 @@
+using System;
+
+namespace sesti_zadatak
+{
+
+
+
+   class KlasaC
+    {       
+            
+            
+    public int Zbroj(int[] a)
+        { int b=0;
+
+            foreach(int i in a)
+            {
+                b += a[i];
+
+            }
+
+            return b;
+        }
+    public float Prosjek(int[] a)
+        {
+            int b=0;
+            foreach (int i in a)
+            {
+                b += a[i];
+
+            }
+            b=b / a.Length;
+       
+        return b;
+        }
+
+    }
+    class Program
+    {
+       
+        static void Main(string[] args)
+        {
+            int[] ocjene = new int[5];
+
+            Console.WriteLine("Upisite 5 brojeva: ");
+            for (int i = 0; i <= 4; i++)
+            {
+
+                ocjene[i] = Convert.ToInt32(Console.In.ReadLine());
+            }
+            KlasaC prosjek = new KlasaC();
+            KlasaC zbroj = new KlasaC();
+            Console.WriteLine("Zbroj "+prosjek.Zbroj(ocjene));
+            Console.WriteLine(", prosjek "+prosjek.Prosjek(ocjene));
+
+            Console.ReadKey();
+        }
+    }
+}
